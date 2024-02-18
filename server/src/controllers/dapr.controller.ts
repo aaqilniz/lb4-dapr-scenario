@@ -31,7 +31,7 @@ export class DaprController {
     body: any,
     @inject(RestBindings.Http.RESPONSE) response: Response,
   ) {
-    console.log('data received from subscribed', body.data);
+    console.log('-> data received from subscribed', body.data);
     return { message: 'data received successfully.' };
   }
 }
